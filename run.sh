@@ -9,4 +9,4 @@ docker build $URL
 docker run --network host \
   -v $(pwd):/work \
   -it \
-  $(docker build -q $URL) /bin/zsh
+  $(docker build -q $URL) /bin/zsh < /dev/tty
